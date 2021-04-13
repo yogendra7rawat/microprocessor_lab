@@ -1,0 +1,5 @@
+	MOV A, M
+	SUB M
+	INX H
+	MOV M, A
+	HLT

@@ -1,0 +1,15 @@
+LXI H 8050H 	
+XRA A 		
+MOV B, A 		
+MOV M, A 	
+INR A 		
+INX H 	
+MOV M, A	
+MVI C, 08H
+LOOP: ADD B	
+MOV B, M	
+INX H	
+MOV M, A	
+DCR C	
+JNZ LOOP 		
+HLT 
